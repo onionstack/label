@@ -1,0 +1,17 @@
+# Mac OS
+.DS_Store
+
+# NPM
+npm-*
+
+/node_modules
+# locales
+/locales
+/src-1
+.idea/
+.vscode/
+/node_modules*/
+node_modules-*/
+$Recycle.Bin/
+package-lock.json
+
