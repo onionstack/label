@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ecf2f6;
+}
+
+.tables {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #354052;
+}
+
+.table-list {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.table {
+    position: relative;
+    color: #d5dae2;
+    font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 20px;
+    user-select: none;
+}
+
+.table:hover {
+    color: #ffffff;
+}
+
+.search {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.file-tree {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background-color: #ffffff;
+    border: 1px solid #e9eff4;
+    padding: 10px;
+    overflow: auto
+}
+
+.product-information {
+    position: absolute;
+    left: calc(50% + 10px);
+    right: 10px;
+    top: calc(50px + 10px);
+    height: calc(50% - 50px - 10px);
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e9eff4;
+    overflow: auto
+    /* border: 1px solid red; */
+}
+
+.file-tree-streamline {
+    position: absolute;
+    left: calc(50% + 10px);
+    right: 10px;
+    top: calc(50% + 10px);
+    bottom: 10px;
+    right: 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e9eff4;
+    padding: 10px;
+    overflow: auto
+    /* border: 1px solid red; */
+}
+
+/* .dividing-file-tree {
+    position: absolute;
+    left: calc(30% + 10px);
+    top: calc(30px + 10px);
+    width: 10px;
+    bottom: 10px;
+    border: 1px solid red;
+    cursor: w-resize;
+    cursor: e-resize;
+    background-color: #F0F0F0;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 100;
+    z-index: 1000;
+} */
+
+/* .dividing-product-information {
+    position: absolute;
+    left: calc(30% + 20px);
+    top: calc(60% + 10px);
+    height: 10px;
+    right: 10px;
+    border: 1px solid red;
+    cursor: n-resize;
+    cursor: s-resize;
+    background-color: #F0F0F0;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 100;
+    z-index: 1000;
+} */

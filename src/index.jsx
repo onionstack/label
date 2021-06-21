@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styles from 'antd/dist/antd.css';
+import 'antd/dist/antd.css'
 import { ContextMenuTrigger } from 'react-contextmenu';
-// import './index.css';
-import { Tree } from 'antd';
+import styles from './index.css';
+import { Input, Tree } from 'antd';
+const { Search } = Input;
 const { TreeNode, DirectoryTree } = Tree;
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import tabStyles from 'react-tabs/style/react-tabs.css';
+import classNames from 'classnames';
 
 const treeData = [
     {
@@ -26,6 +30,62 @@ const treeData = [
                     {
                         title: '0-0-0-2',
                         key: '0-0-0-2',
+                        children: [
+                            {
+                                title: '0-0-0-0',
+                                key: '0-0-0-0-1',
+                            },
+                            {
+                                title: '0-0-0-1',
+                                key: '0-0-0-1-1',
+                            },
+                            {
+                                title: '0-0-0-2',
+                                key: '0-0-0-2-1',
+                                children: [
+                                    {
+                                        title: '0-0-0-0',
+                                        key: '0-0-0-0-1-1',
+                                    },
+                                    {
+                                        title: '0-0-0-1',
+                                        key: '0-0-0-1-1-1',
+                                    },
+                                    {
+                                        title: '0-0-0-2',
+                                        key: '0-0-0-2-1-1',
+                                        children: [
+                                            {
+                                                title: '0-0-0-0',
+                                                key: '0-0-0-0-1-1-1',
+                                            },
+                                            {
+                                                title: '0-0-0-1',
+                                                key: '0-0-0-1-1-1-1',
+                                            },
+                                            {
+                                                title: '0-0-0-2',
+                                                key: '0-0-0-2-1-1-1',
+                                                children: [
+                                                    {
+                                                        title: '0-0-0-0',
+                                                        key: '0-0-0-0-1-1-1-1',
+                                                    },
+                                                    {
+                                                        title: '0-0-0-1',
+                                                        key: '0-0-0-1-1-1-1-1',
+                                                    },
+                                                    {
+                                                        title: '0-0-0-2',
+                                                        key: '0-0-0-2-1-1-1-1',
+                                                    },
+                                                ],
+                                            },
+                                        ],
+                                    },
+                                ],
+                            },
+                        ],
                     },
                 ],
             },
@@ -77,7 +137,34 @@ const treeData = [
     },
 ];
 
-class Label extends React.Component {
+class Tables extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        };
+    }
+
+    ceateTable(content) {
+        // return (<h1 className={styles.table}>{content}</h1>)
+        return (
+            <div className={styles.tableList}>
+                <h1 className={styles.table}>{content}</h1>
+            </div>
+        );
+    }
+
+    render() {
+        return (
+            <div className={styles.tables}>
+                {["用户标签", "内容标签", "产品标签"].map((item) => {
+                    return this.ceateTable(item)
+                })}
+            </div>
+        )
+    }
+}
+
+class FileTree extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -88,12 +175,23 @@ class Label extends React.Component {
         };
     }
 
+    renderTreeNodes(data) {
+        return data.map(item => {
+            let title = item.title;
+            let disabled = false;
 
-
-
+            if (!item.isLeaf && item.children) {
+                return (
+                    <TreeNode disabled={disabled} title={title} key={item.key} dataRef={item}>
+                        {this.renderTreeNodes(item.children)}
+                    </TreeNode>
+                );
+            }
+            return <TreeNode disabled={disabled} key={item.key} title={title} isLeaf={item.isLeaf} dataRef={item} />;
+        });
+    }
 
     render() {
-
         const onExpand = (expandedKeysValue) => {
             console.log('onExpand', expandedKeysValue); // if not set autoExpandParent to false, if children expanded, parent can not collapse.
             // or, you can remove all expanded children keys.
@@ -117,18 +215,14 @@ class Label extends React.Component {
             });
         };
 
-        const data = {
-            title: '0-0-0-2',
-            key: '0-0-0-2',
-        };
-
         return (
-            <div>
+            <div className={styles.fileTree}>
+                <div className={styles.search}>
+                    <Search placeholder="Search" onChange={this.onChange} />
+                </div>
                 <ContextMenuTrigger>
                     <DirectoryTree>
-                        <TreeNode key={data.key} title={data.title} dataRef={data}>
-                            <TreeNode key={data.key} title={data.title} dataRef={data}></TreeNode>
-                        </TreeNode>
+                        {this.renderTreeNodes(treeData)}
                     </DirectoryTree>
                 </ContextMenuTrigger>
             </div>
@@ -150,16 +244,104 @@ class Label extends React.Component {
     }
 }
 
+class ProductInformation extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        };
+    }
+
+    render() {
+        return (
+            <div className={styles.productInformation}></div>
+        );
+    }
+}
+
+class FileTreeStreamline extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        };
+    }
+
+    renderTreeNodes(data) {
+        return data.map(item => {
+            let title = item.title;
+            let disabled = false;
+
+            if (!item.isLeaf && item.children) {
+                return (
+                    <TreeNode disabled={disabled} title={title} key={item.key} dataRef={item}>
+                        {this.renderTreeNodes(item.children)}
+                    </TreeNode>
+                );
+            }
+            return <TreeNode disabled={disabled} key={item.key} title={title} isLeaf={item.isLeaf} dataRef={item} />;
+        });
+    }
+
+    render() {
+        return (
+            <div className={styles.fileTreeStreamline}>
+                <ContextMenuTrigger>
+                    <DirectoryTree>
+                        {this.renderTreeNodes(treeData)}
+                    </DirectoryTree>
+                </ContextMenuTrigger>
+            </div>
+        );
+    }
+}
+
+
+// class DividingFileTree extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+
+//         };
+//     }
+
+//     render() {
+//         return (
+//             <div className={styles.dividingFileTree}></div>
+//         );
+//     }
+// }
+
+// class DividingProductInformation extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+
+//         };
+//     }
+
+//     render() {
+//         return (
+//             <div className={styles.dividingProductInformation}></div>
+//         );
+//     }
+// }
+
+
 
 const ScratchTabComponent = props => {
     return (
         <div>
-            <Label />
+            <Tables />
+            <FileTree />
+            {/* <DividingFileTree /> */}
+            <ProductInformation />
+            {/* <DividingProductInformation /> */}
+            <FileTreeStreamline />
         </div>
     );
 };
 
 const appTarget = document.createElement('div');
-appTarget.style = styles;
 document.body.appendChild(appTarget);
 ReactDOM.render(<ScratchTabComponent />, appTarget);

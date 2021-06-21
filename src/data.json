@@ -1,0 +1,99 @@
+{
+    "user": [],
+    "content": [],
+    "product": [
+        {
+            "title": "控制器",
+            "image": "",
+            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
+            "children": [
+                {
+                    "title": "Micro:bit系列",
+                    "image": "",
+                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
+                    "children": [
+                        {
+                            "title": "Micro bit",
+                            "image": "",
+                            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
+                        }
+                    ]
+                },
+                {
+                    "title": "掌控版系列",
+                    "image": "",
+                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
+                    "children": [
+                        {
+                            "title": "掌控版IO扩展板",
+                            "image": "",
+                            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "控制器",
+            "image": "",
+            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
+            "children": [
+                {
+                    "title": "Micro:bit系列",
+                    "image": "",
+                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
+                    "children": [
+                        {
+                            "title": "Micro bit",
+                            "image": "",
+                            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
+                        }
+                    ]
+                },
+                {
+                    "title": "掌控版系列",
+                    "image": "",
+                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
+                    "children": [
+                        {
+                            "title": "掌控版IO扩展板",
+                            "image": "",
+                            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "控制器",
+            "image": "",
+            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
+            "children": [
+                {
+                    "title": "Micro:bit系列",
+                    "image": "",
+                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
+                    "children": [
+                        {
+                            "title": "Micro bit",
+                            "image": "",
+                            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
+                        }
+                    ]
+                },
+                {
+                    "title": "掌控版系列",
+                    "image": "",
+                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
+                    "children": [
+                        {
+                            "title": "掌控版IO扩展板",
+                            "image": "",
+                            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

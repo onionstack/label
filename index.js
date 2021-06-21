@@ -15,6 +15,10 @@ app.on('ready', () => {
         mainWindow.show();
     });
 
+    if (!mainWindow.webContents.isDevToolsOpened()) {
+        mainWindow.webContents.openDevTools();
+    }
+
 });
 
 
