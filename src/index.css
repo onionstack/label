@@ -1,90 +1,91 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #ecf2f6;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ecf2f6;
 }
 
 .tables {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    background-color: #354052;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #354052;
 }
 
 .table-list {
-    position: relative;
-    display: inline-block;
-    height: 100%;
-    /* border: 1px solid red; */
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  /* border: 1px solid red; */
 }
 
 .table {
-    position: relative;
-    color: #d5dae2;
-    font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
-    font-size: 1.1rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-right: 20px;
-    user-select: none;
+  position: relative;
+  color: #d5dae2;
+  font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: 20px;
+  user-select: none;
 }
 
 .table:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .search {
-    position: relative;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .file-tree {
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    background-color: #ffffff;
-    border: 1px solid #e9eff4;
-    padding: 10px;
-    overflow: auto
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background-color: #ffffff;
+  border: 1px solid #e9eff4;
+  padding: 10px;
+  overflow: auto;
 }
 
 .product-information {
-    position: absolute;
-    left: calc(50% + 10px);
-    right: 10px;
-    top: calc(50px + 10px);
-    height: calc(50% - 50px - 10px);
-    border-radius: 15px;
-    background-color: #ffffff;
-    border: 1px solid #e9eff4;
-    overflow: auto
-    /* border: 1px solid red; */
+  position: absolute;
+  left: calc(50% + 10px);
+  right: 10px;
+  top: calc(50px + 10px);
+  height: calc(50% - 50px - 10px);
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e9eff4;
+  overflow: auto;
+  /* border: 1px solid red; */
 }
 
 .file-tree-streamline {
-    position: absolute;
-    left: calc(50% + 10px);
-    right: 10px;
-    top: calc(50% + 10px);
-    bottom: 10px;
-    right: 10px;
-    border-radius: 15px;
-    background-color: #ffffff;
-    border: 1px solid #e9eff4;
-    padding: 10px;
-    overflow: auto
-    /* border: 1px solid red; */
+  position: absolute;
+  left: calc(50% + 10px);
+  right: 10px;
+  top: calc(50% + 10px);
+  bottom: 10px;
+  right: 10px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e9eff4;
+  padding: 10px;
+  overflow: auto;
+  /* border: 1px solid red; */
 }
 
 /* .dividing-file-tree {
@@ -120,3 +121,7 @@ html, body {
     opacity: 100;
     z-index: 1000;
 } */
+
+.root-node {
+  background-color: rgb(137 195 226 / 20%);
+}

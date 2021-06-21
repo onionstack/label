@@ -1,4 +1,5 @@
 var path = require('path');
+var fs = require('fs');
 const defaultsDeep = require('lodash.defaultsdeep');
 var postcssVars = require('postcss-simple-vars');
 var postcssImport = require('postcss-import');
@@ -34,7 +35,7 @@ module.exports = [
                 {
                     test: /\.jsx?$/,
                     loader: 'babel-loader',
-                    include: [path.resolve(__dirname, 'src'), /node_modules[\\/]scratch-[^\\/]+[\\/]src/],
+                    include: [path.resolve(__dirname, 'src'), /node_modules[\\/]src/],
                     options: {
                         // Explicitly disable babelrc so we don't catch various config
                         // in much lower dependencies.

@@ -65,33 +65,19 @@
             ]
         },
         {
-            "title": "控制器",
+            "title": "机器人平台",
             "image": "",
             "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
             "children": [
                 {
-                    "title": "Micro:bit系列",
+                    "title": "海盗船四轮机器人",
                     "image": "",
-                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
-                    "children": [
-                        {
-                            "title": "Micro bit",
-                            "image": "",
-                            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
-                        }
-                    ]
+                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
                 },
                 {
-                    "title": "掌控版系列",
+                    "title": "风火轮",
                     "image": "",
-                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd",
-                    "children": [
-                        {
-                            "title": "掌控版IO扩展板",
-                            "image": "",
-                            "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
-                        }
-                    ]
+                    "information": "aaaaaaaaaaaaaaaaa\nbbbbbbbbbbbb\nccccccccccccccccc\ndddddddddd"
                 }
             ]
         }
